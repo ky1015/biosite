@@ -1,0 +1,35 @@
+/*
+Author: Kylie Struhs
+Date: 11/20/2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, img, ul, nav li, nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style Rules for Body and Images */
+
+img {
+  max-width: 100%;
+  display:block;
+}
+/* Style Rules for Mobile Viewport */
+
+/* Style Rule for header */
+
+
+/* Style Rule for Navigation Area */
+nav ul {
+  list-style-type: square;
+  text-align: center;
+}
+
+nav li a {
+  font-size: 1.5em;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+}
