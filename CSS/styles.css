@@ -33,3 +33,39 @@ nav li a {
   font-family: 'Quicksand', sans-serif;
   text-decoration: none;
 }
+
+/* Style Rule for Boxes */
+
+#goals {
+  display: inline-block;
+  width: 40%;
+  margin: 5% 5% 0% 5%;
+  padding: 0% 5%;
+  border-radius: 10px;
+  background-color: #63cfda;
+}
+
+#accomplishments {
+  display: inline-block;
+  width: 40%;
+  margin: 1% 5% 5% 5%;
+  padding: 0% 0% 0% 5%;
+  border-radius: 10px;
+  background-color: #2cffa0;
+}
+
+/* Style Rules for Images */
+
+#landscape_photo {
+  display: inline-block;
+  width: 25%;
+  margin: 5% 5% 0% 5%;
+  border-radius: 10px;
+}
+
+#grad_photo {
+  display: inline-block;
+  width: 25%;
+  margin: 5% 5% 0% 5%;
+  border-radius: 10px;
+}
