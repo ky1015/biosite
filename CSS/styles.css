@@ -1,11 +1,11 @@
 /*
 Author: Kylie Struhs
-Date: 11/20/2023
+Date: 12/05/2023
 File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, div, img, ul, nav li, nav ul {
+body, header, nav, main, footer, div, img, ul, nav li, nav ul, figure, figcaption, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -124,7 +124,40 @@ img {
         padding: 5px;
       }
 
+      figure {
+        border: 4px solid #464655;
+        box-shadow: 6px 6px 10px #63cfda;
+        max-width: 400px;
+        margin: 2% auto;
+      }
 
+      figcaption {
+        padding: 2%;
+        border-top: 4px solid #464655;
+        text-align: center;
+      }
+
+      .hobby_intro {
+        background-color: #ffcf56;
+        font-size: 1em;
+        font-family: 'Alice', serif;
+      }
+
+      #hobby_grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+      }
+
+      #about_content {
+        columns: 1;
+      }
+
+      #about_content p {
+        background-color: #ffa69e;
+        border-radius: 8px;
+        padding: 5px;
+      }
 
 
 
@@ -202,6 +235,49 @@ img {
     text-decoration: underline;
   }
 
+  #hobby_grid {
+    column-count: 2;
+  }
+
+  #about_content {
+    column-count: 2;
+  }
+
+  caption {
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+
+  th, td {
+    border: 1px solid #464655;
+    padding: 2%;
+  }
+
+  table {
+    border: 1px solid #464655;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  tr {
+    color: #464655;
+  }
+
+  th {
+    background-color: #47ffaf;
+    color: #000;
+    font-size: 1.15em;
+    text-align: center;
+  }
+
+  td {
+    width: 200px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
 }
 
 /* Media Query for Desktop Viewport */
@@ -227,6 +303,13 @@ img {
       color: #000;
       background-color: #fff;
       opacity: 0.5;
+    }
+
+    /* 1 psuedoclass not covered in textbook */
+
+    nav li a:active {
+      color: white;
+      background-color: pink;
     }
 
   /* Desktop Viewport: Style Rules for Main Content */
@@ -262,6 +345,40 @@ img {
       list-style-type: none;
     }
 
+    #hobby_grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+    }
+
+    .hobby_intro {
+      grid-column: 1 / span 3;
+    }
+
+    .a {
+      order: 1;
+    }
+
+    .b {
+      order: 2;
+    }
+
+    .c {
+      order: 3;
+    }
+
+    .d {
+      order: 4;
+    }
+
+    .e {
+      order: 5;
+    }
+
+    .f {
+      order: 6;
+    }
+
   /*Desktop Viewport: Style Rules for Footer */
 }
 
@@ -282,13 +399,10 @@ img {
 
 
    /*Style Rules for Main Content */
-      body {
-        background: #fff;
+      main {
+        background-image: linear-gradient(#b6eaff, #a5d6eb, #95c3dc,#85b0c4,#759eb1, #658c9f, #567a8c, #47697b, #385869,#2a4858)
       }
 
-      main {
-        background-color: #fff;
-      }
 
       .grid {
         grid-template-columns: auto auto;
@@ -303,39 +417,20 @@ img {
       background-color: white;
       color: #000;
     }
+
+    .header_img {
+      display: none;
+    }
+
+    nav {
+      display: none;
+    }
+
+  /* Not covered in textbook, this shows the url of the links if one chooses to print the website */
+
+  a::after{
+    content: " (" attr(href) ") ";
+  }
   }
 
-   /* Practice grid before grid rules
-  #goals {
-    display: inline-block;
-    width: 40%;
-    margin: 5% 5% 0% 5%;
-    padding: 0% 5%;
-    border-radius: 10px;
-    background-color: #63cfda;
-  }
-
-  #accomplishments {
-    display: inline-block;
-    width: 40%;
-    margin: 1% 5% 5% 5%;
-    padding: 0% 0% 0% 5%;
-    border-radius: 10px;
-    background-color: #2cffa0;
-  }
-
-  #landscape_photo {
-    display: inline-block;
-    width: 25%;
-    margin: 5% 5% 0% 5%;
-    border-radius: 10px;
-  }
-
-  #grad_photo {
-    display: inline-block;
-    width: 25%;
-    margin: 5% 5% 0% 5%;
-    border-radius: 10px;
-  }
-*/
 
