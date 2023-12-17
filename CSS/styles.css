@@ -1,6 +1,6 @@
 /*
 Author: Kylie Struhs
-Date: 12/05/2023
+Date: 12/17/2023
 File Name: styles.css
 */
 
@@ -157,6 +157,19 @@ img {
         background-color: #ffa69e;
         border-radius: 8px;
         padding: 5px;
+      }
+
+      main h4 {
+        text-align: center;
+      }
+
+    /* Style Rules for Footer */
+      footer {
+        color: #ccc;
+        font-size: .75em;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
       }
 
 
